@@ -18,6 +18,21 @@ void sort (int arr[],int tam)
   return;
   };
 
+void sortpun(int arr[],int tam)
+{
+  int* prim;
+  int* ulti;
+
+  for (int i=0;i<tam/2;i++)
+    {
+      prim=&arr[i];
+      ulti=&arr[i+1];
+      if (*ulti<*prim)
+        {int y=*ulti;
+        *ulti=*prim;
+        *prim=y;
+    }
+
 void imprimir(const int arr[],const int tam)
 {
     for(int i=0;i<tam;i++)
